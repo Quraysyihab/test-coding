@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelasmen Sepak Bola</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../test praktek coding/css/style.css" />
+
+    <!-- Noty -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/noty@3.2.0/lib/noty.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/noty@3.2.0/lib/noty.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kelasmen<span>Sepak Bola</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Input Data Club</a>
+        <a href="#menu-input-skor">Input Skor</a>
+        <a href="#view-kelasmen">View Kelasmen</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="input-container">
+          <h1>Input Data Club</h1>
+          <input type="text" id="club-name" placeholder="Nama Club" required />
+          <input type="text" id="club-city" placeholder="Kota Club" required />
+          <button id="save-button">Save</button>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- view Data Club start-->
+    <section class="view-data Club" id="home">
+      <div class="table-container">
+        <h2>Data Club Sepak Bola</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama Club</th>
+              <th>Kota Club</th>
+            </tr>
+          </thead>
+          <tbody id="kelasmen-body">
+            <!-- Data akan secara dinamik ter added disni -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- view data club end-->
+
+    <!-- section input score start -->
+    <section class="input-score" id="menu-input-skor">
+      <div class="input-container">
+        <h2>Penginputan Skor Pertandingan</h2>
+        <div class="input-row">
+          <div class="input-group">
+            <input type="text" id="club1" placeholder="Club 1" required />
+            <input
+              type="number"
+              id="Skor club1"
+              placeholder="Skor club1"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input type="text" id="club2" placeholder="Club2" required />
+            <input
+              type="number"
+              id="score2"
+              placeholder="Skor Club 2"
+              equired
+            />
+          </div>
+          <button id="add-score-button">Save</button>
+        </div>
+        <div class="input-row">
+          <div class="input-group">
+            <textarea
+              id="score-list"
+              rows="5"
+              placeholder="Daftar Skor Pertandingan"
+              readonly
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section input score end -->
+
+    <!-- view Kelasmen start -->
+    <section class="view-kelasmen" id="view-kelasmen">
+      <div class="table-container">
+        <h2>Klasemen Sepak Bola</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Club</th>
+              <th>Ma</th>
+              <th>Me</th>
+              <th>S</th>
+              <th>K</th>
+              <th>Gm</th>
+              <th>Gk</th>
+              <th>Point</th>
+            </tr>
+          </thead>
+          <tbody id="kelasmen-body">
+            <!-- Data klasemen akan secara dinamik ditambahkan di sini -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- view Kelasmen end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="credit">
+        <p>Created by <a href="">Quraysyihab</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="../test praktek coding/js/script.js"></script>
+  </body>
+</html>
